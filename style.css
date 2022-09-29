@@ -6,6 +6,8 @@ background-size: cover;
 color: #fff;
 }
 
+img.hovering:hover {opacity: 0.4;}
+
 #navbar {
     background-color: #333; /* Black background color */
     position: fixed; /* Make it stick/fixed */
@@ -21,7 +23,7 @@ color: #fff;
     color: white;
     text-align: center;
     padding: 15px;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
   }
   
