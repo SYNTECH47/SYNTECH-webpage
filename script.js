@@ -1,11 +1,11 @@
 function GitHub(){
     location.replace("https://github.com/SYNTECH47")
   }
-  function Twitter(){
-    location.replace("https://twitter.com/SyntechUTP")
+  function Instagram(){
+    location.replace("https://www.instagram.com/utpsyntech/?igshid=YmMyMTA2M2Y%3D")
   }
   function YouTube(){
-    location.replace("https://www.youtube.com/channel/UCnrQt6Snk7a3CM5UmlYqsdQ")
+    location.replace("https://www.youtube.com/channel/UCnUf8FFgdqXmzAcZezHA1Ag")
   }
   
   window.onscroll = function() {scrollFunction()};
