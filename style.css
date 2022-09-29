@@ -32,7 +32,7 @@ img.hovering:hover {opacity: 0.4;}
     color: black;
   }
 
-  @media screen and (max-width: 481px){
+  @media screen and (max-width: 300px){
     html {zoom: 500%;}
 
     body {margin: 0;
