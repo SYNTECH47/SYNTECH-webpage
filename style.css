@@ -33,7 +33,7 @@ img.hovering:hover {opacity: 0.4;}
   }
 
   @media screen and (max-width: 481px){
-    html {zoom: 1200%;}
+    html {zoom: 500%;}
 
     body {margin: 0;
     background: url(./img/bg.png) no-repeat 50% fixed;
@@ -58,7 +58,7 @@ img.hovering:hover {opacity: 0.4;}
       color: white;
       text-align: center;
       padding: 15px;
-      font-size: 20px;
+      font-size: 35px;
       text-decoration: none;
     }
       
