@@ -33,7 +33,7 @@ img.hovering:hover {opacity: 0.4;}
   }
 
   @media screen and (max-width: 481px){
-    html {zoom: 400%;}
+    html {zoom: 600%;}
 
     body {margin: 0;
     background: url(./img/bg.png) no-repeat 50% fixed;
