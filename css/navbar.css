@@ -1,0 +1,62 @@
+/* main navigation bar element  */
+/* flexbox stretch property fills parent */
+#navbar {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: #333;
+}
+
+/* general links */
+#section-links-cont {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+#section-links-cont .links-cont {
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+#section-links-cont .links-cont a { /* setting text position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section-links-cont .links-cont a:hover {
+  animation: highlight-link 0.4s;
+  animation-fill-mode: forwards;
+}
+/* social media links */
+#socmed-cont {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#socmed-cont .hovering {
+  width: 50px;
+}
+#socmed-cont .hovering:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}
+#socmed-cont img[alt="YouTube"] {
+  width: 60px;
+  height: 45px;
+}
+
+@keyframes highlight-link {
+  from {
+    color: white;
+    background-color: none;
+  }
+  to {
+    color: black;
+    background-color: #ddd;
+  }
+}
