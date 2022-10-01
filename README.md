@@ -1,7 +1,7 @@
 # SYNTECH-webpage
 📎https://syntech47.github.io/SYNTECH-webpage
 
-<ins>Webpage idea</ins>
+<ins>Webpage idea:</ins>
 - activities
 - chart of departments
 - news/upcoming events
