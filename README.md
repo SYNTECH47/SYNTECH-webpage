@@ -3,6 +3,7 @@
 
 <ins>Webpage idea:</ins>
 - activities
+- achievements
 - chart of departments
 - news/upcoming events
 - objective? (maybe)
