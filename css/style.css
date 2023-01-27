@@ -1,25 +1,67 @@
 /* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: "Segoe UI Black";
-    font-size: 20px;
-    background-image: url("../img/bg.png");
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-  }
-  a {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-  }
-  
+  --bg-color1:#121317;
+  --bg-color2:#1f2024;
+  --syn-color1:#3198ae;
+  --syn-color2:#32c581;
+  --text-color1:#b7b9c1;
+  --text-color2:#851efa;
+
+  background-color: var(--bg-color1);
+
+  font-family: "ZCOOL QingKe HuangYou", "Segoe UI Black";
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-color1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#center-logo {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+#center-logo img {
+  width: 15%;
+  margin-bottom: 1%;
+}
+#text-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#text1 {
+  margin-right: 3%;
+
+  color: var(--syn-color1);
+  font-size: 4rem;
+}
+#text2 {
+  margin-left: 3%;
+
+  color: var(--syn-color2);
+  font-size: 1.75rem;
+}
+
+h1 {
+  font-size: 60px;
+  color: var(--text-color2);
+}
+
+.sect-cont {
+  width: 85%;
+}

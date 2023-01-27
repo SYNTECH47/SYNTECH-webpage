@@ -1,62 +1,38 @@
-/* main navigation bar element  */
-/* flexbox stretch property fills parent */
 #navbar {
-  width: 100%;
-  height: 8%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  background-color: #333;
-}
-
-/* general links */
-#section-links-cont {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-}
-#section-links-cont .links-cont {
-  width: 100%;
-  display: flex;
-  justify-content: stretch;
-  align-items: stretch;
-}
-#section-links-cont .links-cont a { /* setting text position */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#section-links-cont .links-cont a:hover {
-  animation: highlight-link 0.4s;
-  animation-fill-mode: forwards;
-}
-/* social media links */
-#socmed-cont {
-  width: 15%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-#socmed-cont .hovering {
-  width: 50px;
-}
-#socmed-cont .hovering:hover {
-  filter: brightness(120%);
-  cursor: pointer;
-}
-#socmed-cont img[alt="YouTube"] {
-  width: 60px;
-  height: 45px;
+
+  width: 45%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 50px;
+
+  background-color: var(--bg-color2);
+
+  color: var(--text-color1);
+  font-size: 1.1rem;
 }
 
-@keyframes highlight-link {
-  from {
-    color: white;
-    background-color: none;
-  }
-  to {
-    color: black;
-    background-color: #ddd;
-  }
+#navbar a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 0.2s;
+}
+#navbar a:hover{
+  color: var(--text-color2);
+}
+
+.fa-instagram {
+  color: #c9337b;
+
+  transition: 0.2s;
+}
+.fa-instagram:hover {
+  filter: brightness(200%);
 }

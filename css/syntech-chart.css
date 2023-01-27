@@ -1,0 +1,226 @@
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+li span {
+    display: block;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+}
+
+/* content area */
+#content {
+    --line-px: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 85%;
+}
+
+/* organization chart */
+.org-chart {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    width: 100%;
+
+    box-sizing: border-box;
+}
+.org-chart * {
+    box-sizing: border-box;
+}
+
+/* board of organization chart */
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.dept-name {
+    font-size: 2.5vw;
+    color: black;
+}
+
+/* -------------------------------------TOP------------------------------------- */
+/* mainly for highlighting area */
+#top-sect {
+    position: relative; /* position relative for vertical line reference */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px 0;
+    width: 50%;
+    border-radius: 50px;
+
+    background-color: #fc0000;
+}
+/* vertical line from top */
+#top-sect:after {
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+    height: 1300px;
+    border-left: solid white var(--line-px);
+    content: " ";
+}
+
+#top-sect h2 {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    color: black;
+}
+
+/* president display */
+.top {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.top li {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* in top under president */
+.subtop {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-top: 10px;
+    width: 70%;
+    clear: both;
+}
+/* horizontal line connecting to each subtop */
+.subtop:before {
+    position: relative;
+    top: 90px;
+    z-index: -1;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border-top: solid white var(--line-px);
+    content: "";
+}
+/* putting the images left and right */
+.subtop li:first-child {
+    width: fit-content;
+    float: left;
+}
+.subtop li {
+    width: fit-content;
+    float: right;
+}
+
+/* departments under TOP 
+   containers for the sub depts too
+*/
+.subtree {
+    width: 100%;
+}
+.subtree:before {
+    position: relative;
+    top: 165px;
+    z-index: -1;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    border-top: solid white var(--line-px);
+    content: "";
+}
+
+/* sub departments */
+.dept-sect {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    border-radius: 50px;
+    width: 45%;
+    border-radius: 50px;
+}
+
+/* which side to display the images of sub depts */
+.left-display {
+    justify-content: end;
+    padding: 2.5% 3% 2% 0;
+    float: left;
+}
+
+.right-display {
+    justify-content: start;
+    padding: 2.5% 0 2% 3%;
+    float: right;
+}
+
+/* width of images in sub depts */
+.dept-ppl {
+    width: 60%;
+}
+/* putting the images side by side */
+.dept-ppl li:first-child {
+    width: fit-content;
+    float: left;
+}
+.dept-ppl li {
+    width: fit-content;
+    float: right;
+}
+
+.subtree-center {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    clear: both;
+}
+
+.sub-dept-text-left {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.sub-dept-text-right {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+/* -------------------------------------HUGE------------------------------------- */
+#huge-sect {
+    background-color: #4fff32;
+}
+
+/* -------------------------------------ENOVA------------------------------------- */
+#enova-sect {
+    background-color: #fdd600;
+}
+
+/* -------------------------------------ACTION------------------------------------- */
+#action-sect {
+    background-color: #5271ff;
+}
+
+/* -------------------------------------EXTRA------------------------------------- */
+#extra-sect {
+    background-color: #eb760c;
+}
+
+/* -------------------------------------LEVEL------------------------------------- */
+#level-sect {
+    background-color: #cb02fa;
+}

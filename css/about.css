@@ -1,0 +1,18 @@
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 2rem;
+    /* border: solid red; */
+}
+
+#about-text {
+    padding: 10px 15px;
+    border-radius: 40px;
+
+    background-color: var(--bg-color2);
+
+    font-size: 2.5rem;
+    word-wrap: break-word;
+}
